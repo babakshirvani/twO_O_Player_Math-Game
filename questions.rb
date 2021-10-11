@@ -6,8 +6,8 @@ class Question
 
   def ask_question
     make_question
-    puts @question
-    puts "> "
+    puts question
+    print "> "
   end
 
   def answer_validation (answer)
@@ -19,7 +19,6 @@ class Question
       false
     end
   end
-
 
   def make_question
     number_1 = rand(1..20)
